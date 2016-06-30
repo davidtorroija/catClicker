@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cat clicker</title>
+	<style type="text/css">
+	    /* apply a natural box layout model to all elements, but allowing components to change */
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+		.cat-container img{
+            margin:auto;
+            width: 100%;
+            padding: 10px;
+		}
+		.cat-container {
+            margin:auto;
+            width: 48.8%;
+            display: inline-block;
+		}
+		.text-container{
+			display:block;
+            margin:auto;
+            text-align: center;
+            font-family: "Arial";
+		}
+
+	</style>
+</head>
+<body>
+<div class="cats-container">
+    <div id="cat1" class="cat-container">
+        <h3 class="text-container name" id="cat1-name">name</h3>
+        <img class="image" src="cat.jpg" alt="cat">
+        <span class="text-container">Number of clicks: <span class="clicks">0</span></span>
+    </div>
+    <div id="cat2" class="cat-container">
+        <h3 class="text-container name" id="cat1-name">name</h3>
+        <img class="image" src="cat.jpg" alt="cat">
+        <span class="text-container">Number of clicks: <span class="clicks">0</span></span>
+    </div>
+</div>
+<script type="text/javascript" src="cat.js"></script>
+</body>
+</html>
