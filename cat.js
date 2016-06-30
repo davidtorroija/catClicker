@@ -1,5 +1,5 @@
-(function (window, document, undefined) {
-	var cats = [
+
+var cats = [
     {
 	    name: 'Fluffy',
 	    image: 'cat.js',
@@ -11,6 +11,8 @@
 	    clicks: 0
     }
     ];
+(function (window, document, undefined) {
+	
     var text;
     
     clicks = document.getElementById('clicks');
@@ -22,7 +24,8 @@
 
         cat.addEventListener('click', function(event){
             text = event.target.parentNode.getElementsByClassName("clicks")[0];
-            text.innerHTML = text.innerHTML * 1 + 1;
+            cats[index].clicks++;
+            text.innerHTML = cats[index].clicks;
         }, false);
     	// statements
     });
